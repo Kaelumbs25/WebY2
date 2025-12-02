@@ -1,0 +1,20 @@
+{
+    "book": [
+        {
+            "name": "Book1",
+            "img": "/images/book1.png",
+            "price": "24.89",
+            "author": "Dude",
+            "release": "2020",
+            "format": "hardback"
+        },
+        {
+            "name": "Book2",
+            "img": "/images/book2.png",
+            "price": "34.89",
+            "author": "Dude",
+            "release": "2020",
+            "format": "hardback"
+        }
+    ]
+}
