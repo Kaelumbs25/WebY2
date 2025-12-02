@@ -49,6 +49,13 @@ app.get('/about', (req, res) => {
     console.log('about')
   });
 
+app.get('/membership', (req, res) => {
+    state={membership : true}
+    head={title:"Membership"}
+    res.render('membership', { state, head});
+    console.log('membership')
+  });
+
   // checkout route
 app.get('/checkout', (req, res) => {
     state={checkout : true}

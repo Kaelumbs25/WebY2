@@ -2,6 +2,11 @@ html, body {
   width: auto;
 }
 
+img {
+  height: 40vw;
+  width: 80vw;
+}
+
 nav ul {
   list-style: none;
   padding-left: 0;
