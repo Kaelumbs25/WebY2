@@ -35,7 +35,7 @@ function renderProducts(products) {
     //productCard.classList.add("product-card");
 
     productCard.innerHTML = `
-      <img src="${img}" alt="Image of ${name}" />
+      <img style="width: 90%; " src="${img}" alt="Image of ${name}" />
       <h3>${name}</h3>
       <p>${author}</p>
       <p>${release}</p>
@@ -45,6 +45,7 @@ function renderProducts(products) {
 
     // Add this card to the page
     container.appendChild(productCard);
+    productCard.setAttribute("class", "col-12 col-md-6 col-lg-4");
   });
 }
 

@@ -15,6 +15,14 @@
             "author": "Dude",
             "release": "2020",
             "format": "hardback"
+        },
+        {
+            "name": "Book3",
+            "img": "/images/book1.png",
+            "price": "21.00",
+            "author": "bro",
+            "release": "2132",
+            "format": "paperback"
         }
     ]
 }
