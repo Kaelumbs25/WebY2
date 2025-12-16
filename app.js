@@ -29,7 +29,6 @@ app.use(express.static('public'));
 
 // home page or home route
 app.get('/', (req, res) => {
-
   // set active for navigation
   state={home:true}
   // set specifics for <head>
@@ -38,7 +37,6 @@ app.get('/', (req, res) => {
   res.render('index', {state, head});
   // send this to terminal where node app is running
   console.log('home')
-
 });
 
 // about route
@@ -47,6 +45,14 @@ app.get('/about', (req, res) => {
     head={title:"About - Week 1"}
     res.render('about', { state, head});
     console.log('about')
+  });
+
+app.get('/submission', (req, res) => {
+    userComment=req.query.userComment
+    userComment=userComment.replace(/\n/g, "<br/>")
+    formDetails = {userEmail:req.query.userEmail, userComment:userComment}
+    res.render("submission", {formDetails});
+    console.log('submission')
   });
 
 app.get('/membership', (req, res) => {
@@ -59,7 +65,7 @@ app.get('/membership', (req, res) => {
   // checkout route
 app.get('/checkout', (req, res) => {
     state={checkout : true}
-    head={title:"Checkout - Week 1"}
+    head={title:"Checkout"}
     res.render('checkout', { state, head});
     console.log('checkout')
   });
@@ -67,7 +73,7 @@ app.get('/checkout', (req, res) => {
   // login route
 app.get('/login', (req, res) => {
     state={login : true}
-    head={title:"Login - Week 1"}
+    head={title:"Login"}
     res.render('login', { state, head});
     console.log('login')
   });
@@ -75,7 +81,7 @@ app.get('/login', (req, res) => {
   // shop route
 app.get('/shop', (req, res) => {
     state={shop : true}
-    head={title:"Shop - Week 1"}
+    head={title:"Shop"}
     res.render('shop', { state, head});
     console.log('shop')
   });
@@ -83,7 +89,7 @@ app.get('/shop', (req, res) => {
   // user details route
 app.get('/userDetails', (req, res) => {
     state={userDetails : true}
-    head={title:"User Details - Week 1"}
+    head={title:"User Details"}
     res.render('userDetails', { state, head});
     console.log('userDetails')
   });
