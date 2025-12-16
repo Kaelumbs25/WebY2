@@ -16,7 +16,12 @@ nav li {
 }
 .active {
     color :white;
-    background-color:green;
+    background-color:red;
     padding:0.5em;
 
 }
+#aboutUsImg{
+    background-image: url("/images/shop.png");
+    border: 10px solid black;
+    //filter: blur(8px); /* Dulls the background image */
+} 
