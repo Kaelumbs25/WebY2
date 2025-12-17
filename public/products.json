@@ -1,28 +1,123 @@
 {
-    "book": [
+    "book1": [
         {
             "name": "Book1",
-            "img": "/images/book1.png",
+            "img": "/images/book1HB.png",
             "price": "24.89",
             "author": "Dude",
             "release": "2020",
-            "format": "hardback"
+            "format": "hardback",
+            "id": "1"
         },
         {
             "name": "Book2",
-            "img": "/images/book2.png",
-            "price": "34.89",
+            "img": "/images/book1PB.png",
+            "price": "15.99",
             "author": "Dude",
             "release": "2020",
-            "format": "hardback"
+            "format": "paperback",
+            "id": "2"
+        }
+    ],
+    "book2": [
+        {
+            "name": "Book1",
+            "img": "/images/book2HB.png",
+            "price": "22.79",
+            "author": "Dude",
+            "release": "2020",
+            "format": "hardback",
+            "id": "3"
         },
         {
-            "name": "Book3",
-            "img": "/images/book1.png",
-            "price": "21.00",
-            "author": "bro",
-            "release": "2132",
-            "format": "paperback"
+            "name": "Book2",
+            "img": "/images/book2PB.png",
+            "price": "12.89",
+            "author": "Dude",
+            "release": "2020",
+            "format": "paperback",
+            "id": "4"
+        }
+    ],
+    "book3": [
+        {
+            "name": "Book1",
+            "img": "/images/book3HB.png",
+            "price": "24.89",
+            "author": "Dude",
+            "release": "2020",
+            "format": "hardback",
+            "id": "5"
+        },
+        {
+            "name": "Book2",
+            "img": "/images/book3PB.png",
+            "price": "15.99",
+            "author": "Dude",
+            "release": "2020",
+            "format": "paperback",
+            "id": "6"
+        }
+    ],
+    "book4": [
+        {
+            "name": "Book1",
+            "img": "/images/book4HB.png",
+            "price": "24.89",
+            "author": "Dude",
+            "release": "2020",
+            "format": "hardback",
+            "id": "7"
+        },
+        {
+            "name": "Book2",
+            "img": "/images/book4PB.png",
+            "price": "15.99",
+            "author": "Dude",
+            "release": "2020",
+            "format": "paperback",
+            "id": "8"
+        }
+    ],
+    "book5": [
+        {
+            "name": "Book1",
+            "img": "/images/book5HB.png",
+            "price": "24.89",
+            "author": "Dude",
+            "release": "2020",
+            "format": "hardback",
+            "id": "9"
+        },
+        {
+            "name": "Book2",
+            "img": "/images/book5PB.png",
+            "price": "15.99",
+            "author": "Dude",
+            "release": "2020",
+            "format": "paperback",
+            "id": "10"
+        }
+    ],
+    "book6": [
+        {
+            "name": "Book1",
+            "img": "/images/book6HB.png",
+            "price": "24.89",
+            "author": "Dude",
+            "release": "2020",
+            "format": "hardback",
+            "id": "11"
+        },
+        {
+            "name": "Book2",
+            "img": "/images/book6PB.png",
+            "price": "15.99",
+            "author": "Dude",
+            "release": "2020",
+            "format": "paperback",
+            "id": "12"
         }
     ]
+
 }
