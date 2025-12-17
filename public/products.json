@@ -7,7 +7,9 @@
             "author": "Jake Graves",
             "release": "2020",
             "format": "hardback",
-            "id": "0"
+            "id": "0",
+            "desc": ""
+            
         },
         {
             "name": "Neon Shards",
@@ -16,7 +18,8 @@
             "author": "Jake Graves",
             "release": "2020",
             "format": "paperback",
-            "id": "1"
+            "id": "1",
+            "desc": ""
         },
         {
             "name": "Omega Protocol",
@@ -25,7 +28,8 @@
             "author": "Michael Kane",
             "release": "2020",
             "format": "hardback",
-            "id": "2"
+            "id": "2",
+            "desc": ""
         },
         {
             "name": "Omega Protocol",
@@ -34,7 +38,8 @@
             "author": "Michael Kane",
             "release": "2020",
             "format": "paperback",
-            "id": "3"
+            "id": "3",
+            "desc": ""
         },
         {
             "name": "Starfire Dominion",
@@ -43,7 +48,8 @@
             "author": "Laura Drake",
             "release": "2020",
             "format": "hardback",
-            "id": "4"
+            "id": "4",
+            "desc": ""
         },
         {
             "name": "Starfire Dominion",
@@ -52,7 +58,8 @@
             "author": "Laura Drake",
             "release": "2020",
             "format": "paperback",
-            "id": "5"
+            "id": "5",
+            "desc": ""
         },
         {
             "name": "The Crown of Ash and Thorns",
@@ -61,7 +68,8 @@
             "author": "Laura Drake",
             "release": "2020",
             "format": "hardback",
-            "id": "6"
+            "id": "6",
+            "desc": ""
         },
         {
             "name": "The Crown of Ash and Thorns",
@@ -70,7 +78,8 @@
             "author": "Laura Drake",
             "release": "2020",
             "format": "paperback",
-            "id": "7"
+            "id": "7",
+            "desc": ""
         },
         {
             "name": "Whispers Beneath the Briarwood",
@@ -79,7 +88,8 @@
             "author": "Damian Wilder",
             "release": "2020",
             "format": "hardback",
-            "id": "8"
+            "id": "8",
+            "desc": ""
         },
         {
             "name": "Whispers Beneath the Briarwood",
@@ -88,7 +98,8 @@
             "author": "Damian Wilder",
             "release": "2020",
             "format": "paperback",
-            "id": "9"
+            "id": "9",
+            "desc": ""
         },
         {
             "name": "The Clockmaker's Pact",
@@ -97,7 +108,8 @@
             "author": "Evelyn Park",
             "release": "2020",
             "format": "hardback",
-            "id": "10"
+            "id": "10",
+            "desc": ""
         },
         {
             "name": "The Clockmaker's Pact",
@@ -106,7 +118,8 @@
             "author": "Evelyn Park",
             "release": "2020",
             "format": "paperback",
-            "id": "11"
+            "id": "11",
+            "desc": ""
         }
     ]
 
