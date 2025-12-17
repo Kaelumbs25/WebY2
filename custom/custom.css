@@ -1,0 +1,39 @@
+html, body {
+  width: auto;
+  background-color: rgb(48, 78, 1);
+  color: azure;
+  margin: 0 1em 0 1em;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+.active {
+  color: white;
+  background-color: green;
+  padding: 0.5em;
+}
+
+#aboutUsImg {
+  border-radius: 50px;
+  height: 100%;
+  background-image: url("/images/shop1.png");
+  text-align: center;
+  margin: 0% 1em 0 1em;
+  padding: 10%;
+}
+
+div picture {
+  display: flow-root;
+}/*# sourceMappingURL=custom.css.map */
