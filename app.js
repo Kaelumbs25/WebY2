@@ -94,6 +94,11 @@ app.get('/userDetails', (req, res) => {
     console.log('userDetails')
   });
 
+app.get('/product/:id', (req,res) => {
+  head={title:"Product "+req.params.id}
+  res.render('product', {id: req.params.id})
+  console.log('product'+req.params.id)
+});
 
 // Start the server
 app.listen(3000, () => {

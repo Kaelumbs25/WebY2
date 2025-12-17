@@ -7,7 +7,7 @@ async function fetchProducts() {
     const products = await response.json();
 
     // Call the rendering function to create HTML elements
-    renderProducts(products);
+    renderProducts(products.books);
 
   } catch (error) {
     console.error("Failed to fetch products data:", error);
@@ -16,12 +16,12 @@ async function fetchProducts() {
   }
 }
 
-function renderProducts(products) {
+function renderProducts(books) {
   const container = document.getElementById("products-container");
   container.innerHTML = ""; // Clear previous content if needed
 
-  for (const key in products) {
-    const book = products[key][0];
+  for (const key in books) {
+    const book = books[key];
 
     const {
       name,
@@ -41,7 +41,7 @@ function renderProducts(products) {
     
 
     productCard.innerHTML = `
-      <a class="text-decoration-none d-flex " href="book${id}">
+      <a class="text-decoration-none d-flex " href="product/${id}">
       <img class="w-50 h-50 " src="${img}" alt="Image of ${name}" />
       <div>
       <h3>${name}</h3>
