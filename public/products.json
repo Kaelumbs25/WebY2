@@ -1,122 +1,112 @@
 {
-    "book1": [
+    "books": [
         {
-            "name": "Book1",
+            "name": "Neon Shards",
             "img": "/images/book1HB.png",
             "price": "24.89",
-            "author": "Dude",
+            "author": "Jake Graves",
             "release": "2020",
             "format": "hardback",
+            "id": "0"
+        },
+        {
+            "name": "Neon Shards",
+            "img": "/images/book1PB.png",
+            "price": "15.99",
+            "author": "Jake Graves",
+            "release": "2020",
+            "format": "paperback",
             "id": "1"
         },
         {
-            "name": "Book2",
-            "img": "/images/book1PB.png",
-            "price": "15.99",
-            "author": "Dude",
-            "release": "2020",
-            "format": "paperback",
-            "id": "2"
-        }
-    ],
-    "book2": [
-        {
-            "name": "Book1",
+            "name": "Omega Protocol",
             "img": "/images/book2HB.png",
             "price": "22.79",
-            "author": "Dude",
+            "author": "Michael Kane",
             "release": "2020",
             "format": "hardback",
+            "id": "2"
+        },
+        {
+            "name": "Omega Protocol",
+            "img": "/images/book2PB.png",
+            "price": "12.89",
+            "author": "Michael Kane",
+            "release": "2020",
+            "format": "paperback",
             "id": "3"
         },
         {
-            "name": "Book2",
-            "img": "/images/book2PB.png",
-            "price": "12.89",
-            "author": "Dude",
-            "release": "2020",
-            "format": "paperback",
-            "id": "4"
-        }
-    ],
-    "book3": [
-        {
-            "name": "Book1",
+            "name": "Starfire Dominion",
             "img": "/images/book3HB.png",
             "price": "24.89",
-            "author": "Dude",
+            "author": "Laura Drake",
             "release": "2020",
             "format": "hardback",
+            "id": "4"
+        },
+        {
+            "name": "Starfire Dominion",
+            "img": "/images/book3PB.png",
+            "price": "15.99",
+            "author": "Laura Drake",
+            "release": "2020",
+            "format": "paperback",
             "id": "5"
         },
         {
-            "name": "Book2",
-            "img": "/images/book3PB.png",
-            "price": "15.99",
-            "author": "Dude",
-            "release": "2020",
-            "format": "paperback",
-            "id": "6"
-        }
-    ],
-    "book4": [
-        {
-            "name": "Book1",
+            "name": "The Crown of Ash and Thorns",
             "img": "/images/book4HB.png",
             "price": "24.89",
-            "author": "Dude",
+            "author": "Laura Drake",
             "release": "2020",
             "format": "hardback",
+            "id": "6"
+        },
+        {
+            "name": "The Crown of Ash and Thorns",
+            "img": "/images/book4PB.png",
+            "price": "15.99",
+            "author": "Laura Drake",
+            "release": "2020",
+            "format": "paperback",
             "id": "7"
         },
         {
-            "name": "Book2",
-            "img": "/images/book4PB.png",
-            "price": "15.99",
-            "author": "Dude",
-            "release": "2020",
-            "format": "paperback",
-            "id": "8"
-        }
-    ],
-    "book5": [
-        {
-            "name": "Book1",
+            "name": "Whispers Beneath the Briarwood",
             "img": "/images/book5HB.png",
             "price": "24.89",
-            "author": "Dude",
+            "author": "Damian Wilder",
             "release": "2020",
             "format": "hardback",
+            "id": "8"
+        },
+        {
+            "name": "Whispers Beneath the Briarwood",
+            "img": "/images/book5PB.png",
+            "price": "15.99",
+            "author": "Damian Wilder",
+            "release": "2020",
+            "format": "paperback",
             "id": "9"
         },
         {
-            "name": "Book2",
-            "img": "/images/book5PB.png",
-            "price": "15.99",
-            "author": "Dude",
-            "release": "2020",
-            "format": "paperback",
-            "id": "10"
-        }
-    ],
-    "book6": [
-        {
-            "name": "Book1",
+            "name": "The Clockmaker's Pact",
             "img": "/images/book6HB.png",
             "price": "24.89",
-            "author": "Dude",
+            "author": "Evelyn Park",
             "release": "2020",
             "format": "hardback",
-            "id": "11"
+            "id": "10"
         },
         {
-            "name": "Book2",
+            "name": "The Clockmaker's Pact",
             "img": "/images/book6PB.png",
             "price": "15.99",
-            "author": "Dude",
+            "author": "Evelyn Park",
             "release": "2020",
             "format": "paperback",
-            "id": "12"
+            "id": "11"
         }
     ]
 

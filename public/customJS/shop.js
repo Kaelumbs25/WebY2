@@ -41,7 +41,7 @@ function renderProducts(products) {
     
 
     productCard.innerHTML = `
-      <a class="text-decoration-none d-flex " href="$book${id}">
+      <a class="text-decoration-none d-flex " href="book${id}">
       <img class="w-50 h-50 " src="${img}" alt="Image of ${name}" />
       <div>
       <h3>${name}</h3>
@@ -49,6 +49,7 @@ function renderProducts(products) {
       <p>${release}</p>
       <p>${format}</p>
       <p>${price}</p>
+      
       </div
       </a>
     `;
