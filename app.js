@@ -94,6 +94,15 @@ app.get('/userDetails', (req, res) => {
     console.log('userDetails')
   });
 
+  // cart route
+app.get('/cart', (req, res) => {
+    state={cart : true}
+    head={title:"Shopping Cart"}
+    res.render('cart', { state, head});
+    console.log('cart')
+  });
+
+  //product adaptive route
 app.get('/product/:id', (req,res) => {
   head={title:"Product "+req.params.id}
   res.render('product', {id: req.params.id})

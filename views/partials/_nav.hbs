@@ -1,29 +1,33 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar w/ text</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a  class='{{#if state.home}}active{{/if}} nav-link' href='/'>Home</a>
-        </li>
-        <li class="nav-item">
-          <a class='{{#if state.shop}}active{{/if}} nav-link' href='/shop'>Shop</a>
-        </li>
-        <li class="nav-item">
-          <a  class='{{#if state.membership}}active{{/if}} nav-link' href='/membership'>Membership</a>
-        </li>
-        <li class="nav-item">
-          <a  class='{{#if state.about}}active{{/if}} nav-link' href='/about'>About Us</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
-    </div>
-  </div>
+     <div class="container-fluid">
+
+          <div class="d-flex justify-content-between w-100">
+               <a class="navbar-brand" href="/">Books&Beyond</a>
+               <div class="d-flex align-items-center">
+                    <a class="nav-link" href="/cart">
+                         <img id="cart" src="/images/cart.png" alt="Cart">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+               </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+               <ul class="navbar-nav">
+                    <li class="nav-item">
+                         <a class="nav-link {{#if state.home}}active{{/if}}" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link {{#if state.shop}}active{{/if}}" href="/shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link {{#if state.membership}}active{{/if}}" href="/membership">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link {{#if state.about}}active{{/if}}" href="/about">About Us</a>
+                    </li>
+               </ul>
+          </div>
+
+     </div>
 </nav>
-
-

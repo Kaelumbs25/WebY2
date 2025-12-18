@@ -12,6 +12,9 @@ async function fetchProduct() {
     // Call the rendering function to create HTML elements
     renderProducts(products.books[id]);
 
+    document.getElementById("add").addEventListener("click", () => {
+      addBook(container.classList[0]);
+    });
   } catch (error) {
     console.error("Failed to fetch products data:", error);
     document.getElementById("products-container").innerHTML =
@@ -41,7 +44,7 @@ function renderProducts(book) {
         <a href="/product/${String(Number(book.id)-1)}" class="btn" id="HB">Hardback</a>
     </div>
     <p>${book.price}</p>
-    <button>Add to Cart</button>
+    <button id="add">Add to Cart</button>
     </div
     
     `;
@@ -58,8 +61,36 @@ function renderProducts(book) {
     }
 }
 
+function addBook(id){
+  id = Number(id);
+  //Add specific product amount
+  if(localStorage.getItem(`book${id}`) == null)
+  {
+    localStorage.setItem(`book${id}`, 1);
+    alert(`Book quantity = ${localStorage.getItem(`book${id}`)}`);
+  }
+  else
+  {
+    localStorage.setItem(`book${id}`, Number(localStorage.getItem(`book${id}`))+1);
+    alert(`Book quantity = ${localStorage.getItem(`book${id}`)}`);
+  }
+  
+  //Add cart quantity value
+  if(localStorage.getItem("cart") == null)
+  {
+    localStorage.setItem("cart", 1);
+  }
+  else
+  {
+    localStorage.setItem("cart", Number(localStorage.getItem("cart"))+1);
+  }
+}
+
+
+
 
 // ---------------------------------------------------------------
 // RUN THE PROGRAM
 // ---------------------------------------------------------------
 fetchProduct();
+
