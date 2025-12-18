@@ -14,6 +14,7 @@ async function fetchProduct() {
 
     document.getElementById("add").addEventListener("click", () => {
       addBook(container.classList[0]);
+      cartNum();
     });
   } catch (error) {
     console.error("Failed to fetch products data:", error);
@@ -67,12 +68,10 @@ function addBook(id){
   if(localStorage.getItem(`book${id}`) == null)
   {
     localStorage.setItem(`book${id}`, 1);
-    alert(`Book quantity = ${localStorage.getItem(`book${id}`)}`);
   }
   else
   {
     localStorage.setItem(`book${id}`, Number(localStorage.getItem(`book${id}`))+1);
-    alert(`Book quantity = ${localStorage.getItem(`book${id}`)}`);
   }
   
   //Add cart quantity value
@@ -84,6 +83,12 @@ function addBook(id){
   {
     localStorage.setItem("cart", Number(localStorage.getItem("cart"))+1);
   }
+}
+
+function cartNum(){
+    if(localStorage.getItem("cart") != null){
+        document.getElementById("cartBadge").innerHTML = localStorage.getItem("cart");
+    }
 }
 
 
