@@ -35,6 +35,7 @@ function renderProducts(books) {
 
     console.log(book)
 
+    if(id==0 || Number(id)%2==0){
 
     const productCard = document.createElement("div");
     productCard.setAttribute("class", "col-12 col-md-6 col-lg-4 productCard");
@@ -58,6 +59,7 @@ function renderProducts(books) {
     container.appendChild(productCard);
     productCard.classList.add("gy-4");
   };
+  }
 }
 
 
