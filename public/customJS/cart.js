@@ -20,46 +20,69 @@ function renderProducts(books) {
   const container = document.getElementById("products-container");
   container.innerHTML = ""; // Clear previous content if needed
 
-  for (const key in books) {
-    const book = books[key];
+  console.log(books);
 
-    const {
-      name,
-      img,
-      author,
-      release,
-      format,
-      price,
-      id
-    } = book;
+  Object.keys(localStorage).forEach(key => {
+    const id = Number(key);
+    if(key !== "cart")
+    {
+        const book = books[key];
 
-    console.log(book)
+        const {
+          name,
+          img,
+          author,
+          release,
+          format,
+          price,
+          id
+        } = book;
 
-    if(id==0 || Number(id)%2==0){
+        console.log(book)
 
-    const productCard = document.createElement("div");
-    productCard.setAttribute("class", "col-12 col-md-6 col-lg-4 productCard");
-    
+        const productCard = document.createElement("div");
+        productCard.setAttribute("class", "row productCard text-secondary");
+        
 
-    productCard.innerHTML = `
-      <a class="text-decoration-none d-flex " href="product/${id}">
-      <img class="w-50 h-50 " src="${img}" alt="Image of ${name}" />
-      <div>
-      <h3>${name}</h3>
-      <p>${author}</p>
-      <p>${release}</p>
-      <p>${format}</p>
-      <p>${price}</p>
-      
-      </div
-      </a>
-    `;
+        productCard.innerHTML = `
+          <div class="col-6">
+          <img src="${img}" alt="Image of ${name}">
+          </div>
+          <div class="col-6">
+          <h3>${name}</h3>
+          <p>${author}</p>
+          <p>${release}</p>
+          <p>${format}</p>
+          <p>${price}</p>
+          <p>Quantity: </p>         
+          <label for="quantity">Quantity:</label>
+          <input type="number" class="counter" id="quantity" name="quantity" min="1" value="${localStorage.getItem(`${key}`)}">
+          <button type="button" id="${key}" class="btn btn-success">Set</button>
+          </div>
+          
+        `;
 
-    // Add this card to the page
-    container.appendChild(productCard);
-    productCard.classList.add("gy-4");
-  };
-  }
+        // Add this card to the page
+        container.appendChild(productCard);
+        productCard.classList.add("gy-4");
+
+        document.getElementById(key).addEventListener("click", () => {
+
+            let newQuantity = 0;
+            const quantList = document.querySelectorAll(".counter");
+            for (let i = 0; i < quantList.length; i++) {
+              newQuantity += Number(quantList[i].value);
+            }
+
+            localStorage.setItem("cart", newQuantity);
+            localStorage.setItem(key, document.getElementById("quantity").value)
+            document.getElementById("cartBadge").innerHTML = localStorage.getItem("cart");
+
+        });
+        }
+    })
+
+
 }
 
 

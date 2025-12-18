@@ -65,13 +65,13 @@ function renderProducts(book) {
 function addBook(id){
   id = Number(id);
   //Add specific product amount
-  if(localStorage.getItem(`book${id}`) == null)
+  if(localStorage.getItem(`${id}`) == null)
   {
-    localStorage.setItem(`book${id}`, 1);
+    localStorage.setItem(`${id}`, 1);
   }
   else
   {
-    localStorage.setItem(`book${id}`, Number(localStorage.getItem(`book${id}`))+1);
+    localStorage.setItem(`${id}`, Number(localStorage.getItem(`${id}`))+1);
   }
   
   //Add cart quantity value
