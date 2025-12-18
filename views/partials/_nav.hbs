@@ -3,8 +3,17 @@
           <div class="d-flex justify-content-between w-100">
                <a class="navbar-brand" href="/">Books&Beyond</a>
                <div class="d-flex align-items-center">
+                    <a class="nav-link" href="/userDetails">
+                         <img class="icon" src="/images/account.png" alt="Account Icon">
+                    </a>
                     <a class="nav-link" href="/cart">
-                         <img id="cart" src="/images/cart.png" alt="Cart">
+                         <button class="btn position-relative">
+                              <img class="icon" src="/images/cart.png" alt="Cart Icon"> 
+                              <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-danger">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                         </button>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
