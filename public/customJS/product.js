@@ -10,7 +10,7 @@ async function fetchProduct() {
     const id = container.classList[0];
 
     // Call the rendering function to create HTML elements
-    renderProducts(products.books[id]);
+    renderPage(products.books[id]);
 
     document.getElementById("add").addEventListener("click", () => {
       addBook(container.classList[0]);
@@ -23,7 +23,7 @@ async function fetchProduct() {
   }
 }
 
-function renderProducts(book) {
+function renderPage(book) {
   const container = document.getElementById("container");
 
   console.log(book)

@@ -7,7 +7,7 @@ async function fetchProducts() {
     const products = await response.json();
 
     // Call the rendering function to create HTML elements
-    renderProducts(products.books);
+    renderPage(products.books);
 
   } catch (error) {
     console.error("Failed to fetch products data:", error);
@@ -16,7 +16,7 @@ async function fetchProducts() {
   }
 }
 
-function renderProducts(books) {
+function renderPage(books) {
   const container = document.getElementById("products-container");
   container.innerHTML = ""; // Clear previous content if needed
 
@@ -77,14 +77,40 @@ function renderProducts(books) {
             localStorage.setItem("cart", newQuantity);
             localStorage.setItem(key, document.getElementById("quantity").value)
             document.getElementById("cartBadge").innerHTML = localStorage.getItem("cart");
-
+            calcCost(books);
         });
-        }
-    })
-
-
+    }
+  });
+    
+  calcCost(books)
+  
 }
 
+function calcCost(books){
+      let total = 0;
+  Object.keys(localStorage).forEach(key => {
+    if(key!=="cart")
+    {
+    const book = books[key];
+
+        const {
+          name,
+          img,
+          author,
+          release,
+          format,
+          price,
+          id
+        } = book;
+    
+    total+=book.price*Number(localStorage.getItem(key));
+    
+    }
+  });
+  total = total.toFixed(2);
+
+  document.getElementById("totalCost").innerHTML= `€${total}`;
+}
 
 // ---------------------------------------------------------------
 // RUN THE PROGRAM
