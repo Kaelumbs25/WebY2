@@ -1,4 +1,4 @@
-async function fetchProducts() {
+async function fetchUser() {
   const file = "/products.json";
   
   try {
@@ -24,7 +24,7 @@ function renderPage(books) {
 
   Object.keys(localStorage).forEach(key => {
     const id = Number(key);
-    if(key !== "cart")
+    if(key !== "cart" && key !== "loggedIn")
     {
         const book = books[key];
 
@@ -89,7 +89,7 @@ function renderPage(books) {
 function calcCost(books){
       let total = 0;
   Object.keys(localStorage).forEach(key => {
-    if(key!=="cart")
+    if(key!=="cart" && key !== "loggedIn")
     {
     const book = books[key];
 
@@ -115,4 +115,4 @@ function calcCost(books){
 // ---------------------------------------------------------------
 // RUN THE PROGRAM
 // ---------------------------------------------------------------
-fetchProducts();
+fetchUser();

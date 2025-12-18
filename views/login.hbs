@@ -1,4 +1,15 @@
 <main>
-    
+    <form name="commentForm" method="GET">
+        <div class="mb-3">
+            <label for="name" class="form-label">Username</label>
+            <input type="text" class="form-control" id="name" name="name" value="danA" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input class="form-control" id="password" name="password" value="1234" required></input>            
+        </div>
+        <button type="button" id="login" class="btn btn-primary">Log In</button>
+    </form>
+    <div id="errorBox"></div>
 </main>
 <script src="/customJS/login.js" defer></script>

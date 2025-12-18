@@ -3,7 +3,7 @@
           <div class="d-flex justify-content-between w-100">
                <a class="navbar-brand" href="/">Books&Beyond</a>
                <div class="d-flex align-items-center">
-                    <a class="nav-link" href="/userDetails">
+                    <a id="userDetails" class="nav-link" href="/userDetails">
                          <img class="icon" src="/images/account.png" alt="Account Icon">
                     </a>
                     <a class="nav-link" href="/cart">
@@ -31,6 +31,12 @@
                     </li>
                     <li class="nav-item">
                          <a class="nav-link {{#if state.about}}active{{/if}}" href="/about">About Us</a>
+                    </li>
+                    <li id="logIn"class="nav-item">
+                         <a class="nav-link" href="/login">Log In</a>
+                    </li>
+                    <li id="logOut"class="nav-item">
+                         <button class="nav-link">Log Out</button>
                     </li>
                </ul>
           </div>
