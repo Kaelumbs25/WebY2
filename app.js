@@ -102,6 +102,13 @@ app.get('/cart', (req, res) => {
     console.log('cart')
   });
 
+app.get('/success', (req, res) => {
+    state={cart : true}
+    head={title:"Order Success"}
+    res.render('success', { state, head});
+    console.log('success')
+  });
+
   //product adaptive route
 app.get('/product/:id', (req,res) => {
   head={title:"Product "+req.params.id}

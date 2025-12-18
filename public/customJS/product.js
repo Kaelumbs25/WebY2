@@ -46,11 +46,15 @@ function renderPage(book) {
     </div>
     <p>${book.price}</p>
     <button id="add">Add to Cart</button>
-    </div
+    </div>
     
     `;
   // Add this card to the page
   container.appendChild(productCard);
+
+  const description = document.createElement("div");
+  description.textContent = book.desc;
+  container.appendChild(description);
 
   if(book.format == "paperback")
     {

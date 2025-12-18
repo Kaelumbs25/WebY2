@@ -2,6 +2,8 @@
     "user1": {
         "name": "danA",
         "password": "1234",
-        "postcode": "F24D5H4"
+        "postcode": "F24D5H4",
+        "phone": "+353 087 847 2847",
+        "email": "johnjoe@duffy.ie"
     }
 }
