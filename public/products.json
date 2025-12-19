@@ -44,7 +44,7 @@
         {
             "name": "Starfire Dominion",
             "img": "/images/book3HB.png",
-            "price": "24.89",
+            "price": "21.49",
             "author": "Laura Drake",
             "release": "2020",
             "format": "hardback",
@@ -64,7 +64,7 @@
         {
             "name": "The Crown of Ash and Thorns",
             "img": "/images/book4HB.png",
-            "price": "24.89",
+            "price": "20.99",
             "author": "Laura Drake",
             "release": "2020",
             "format": "hardback",
@@ -74,7 +74,7 @@
         {
             "name": "The Crown of Ash and Thorns",
             "img": "/images/book4PB.png",
-            "price": "15.99",
+            "price": "17.59",
             "author": "Laura Drake",
             "release": "2020",
             "format": "paperback",
@@ -84,7 +84,7 @@
         {
             "name": "Whispers Beneath the Briarwood",
             "img": "/images/book5HB.png",
-            "price": "24.89",
+            "price": "29.99",
             "author": "Damian Wilder",
             "release": "2020",
             "format": "hardback",
@@ -94,7 +94,7 @@
         {
             "name": "Whispers Beneath the Briarwood",
             "img": "/images/book5PB.png",
-            "price": "15.99",
+            "price": "15.50",
             "author": "Damian Wilder",
             "release": "2020",
             "format": "paperback",
@@ -104,7 +104,7 @@
         {
             "name": "The Clockmakers Pact",
             "img": "/images/book6HB.png",
-            "price": "24.89",
+            "price": "25.00",
             "author": "Evelyn Park",
             "release": "2020",
             "format": "hardback",
@@ -114,7 +114,7 @@
         {
             "name": "The Clockmakers Pact",
             "img": "/images/book6PB.png",
-            "price": "15.99",
+            "price": "16.50",
             "author": "Evelyn Park",
             "release": "2020",
             "format": "paperback",

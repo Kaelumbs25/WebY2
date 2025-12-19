@@ -1,6 +1,7 @@
+$bg: rgb(48, 78, 1);
 html, body {
     width: auto;
-    background-color: rgb(48, 78, 1);
+    background-color: $bg;
     color: azure;
     margin: 0 1em 0 1em;
 }
@@ -8,14 +9,15 @@ img{
     height: 100%;
     width: 100%;
 }
-
-nav ul {
+nav{
+    background-color: rgb(2, 173, 2);
+    ul {
     list-style: none; 
     padding-left:0;
-}
-nav li {
+    }
+    li {
     display:inline;
-
+    }
 }
 .active {
     color :white;
@@ -35,7 +37,7 @@ div picture{
 } 
 .productCard{
     background-color: white;
-    border-right: 10px solid rgb(48, 78, 1);;
+    border-right: 10px solid $bg;
 }
 .productImg{
     max-height: 400px;

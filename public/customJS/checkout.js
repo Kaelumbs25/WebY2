@@ -22,7 +22,7 @@ async function fetchUser() {
 function fillOutDetails(user)
 {
     document.getElementById("username").value = user.name;
-    document.getElementById("address").value = user.address;
+    document.getElementById("address").value = user.postcode;
     document.getElementById("phone").value = user.phone;
     document.getElementById("email").value = user.email;
 }

@@ -42,7 +42,7 @@ function renderProducts(books) {
     
 
     productCard.innerHTML = `
-      <a class="text-decoration-none d-flex " href="product/${id}">
+      <a class="text-dark text-decoration-none d-flex " href="product/${id}">
       <img class="w-50 h-50 " src="${img}" alt="Image of ${name}" />
       <div>
       <h4>${name}</h4>

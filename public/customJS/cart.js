@@ -24,7 +24,7 @@ function renderPage(books) {
 
   Object.keys(localStorage).forEach(key => {
     const id = Number(key);
-    if(key !== "cart" && key !== "loggedIn")
+    if(key !== "cart" && key !== "loggedIn" && localStorage.getItem(key) !== "0")
     {
         const book = books[key];
 
@@ -56,7 +56,7 @@ function renderPage(books) {
           <p>${price}</p>
           <p>Quantity: </p>         
           <label for="quantity">Quantity:</label>
-          <input type="number" class="counter" id="quantity" name="quantity" min="1" value="${localStorage.getItem(`${key}`)}">
+          <input type="number" class="counter" id="quantity" name="quantity" min="0" value="${localStorage.getItem(`${key}`)}">
           <button type="button" id="${key}" class="btn btn-success">Set</button>
           </div>
           
