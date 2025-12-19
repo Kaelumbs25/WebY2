@@ -45,13 +45,13 @@ function renderProducts(books) {
       <a class="text-decoration-none d-flex " href="product/${id}">
       <img class="w-50 h-50 " src="${img}" alt="Image of ${name}" />
       <div>
-      <h3>${name}</h3>
-      <p>${author}</p>
-      <p>${release}</p>
+      <h4>${name}</h4>
+      <p>By ${author}</p>
+      <p>Released: ${release}</p>
       <p>${format}</p>
-      <p>${price}</p>
+      <p>€${price}</p>
       
-      </div
+      </div>
       </a>
     `;
 
