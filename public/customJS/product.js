@@ -45,7 +45,7 @@ function renderPage(book) {
         <a href="/product/${String(Number(book.id)-1)}" class="btn" id="HB">Hardback</a>
     </div>
     <p>${book.price}</p>
-    <button id="add">Add to Cart</button>
+    <button class="btn btn-success" id="add">Add to Cart</button>
     </div>
     
     `;
