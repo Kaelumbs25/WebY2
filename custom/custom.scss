@@ -32,6 +32,10 @@ nav{
     margin: 0% 1em 0 1em;
     padding: 10%;
 } 
+#logo{
+    width: 75px;
+    height: 75px;
+}
 div picture{
     display:flow-root;
 } 
@@ -46,4 +50,5 @@ div picture{
 .icon{
     width: 80px;
     height: 80px;
+    max-width: 100%;
 }
